@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "66685597035",
+    "project_id": "hindu-fm-2024",
+    "storage_bucket": "hindu-fm-2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66685597035:android:22bc7e749d2ee83703882e",
+        "android_client_info": {
+          "package_name": "com.hindufm.hindufm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzCSm-8zPX8mBg0JIWbiPsVihWApFwHdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

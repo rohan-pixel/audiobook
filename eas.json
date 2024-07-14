@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 10.1.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "API_URL": "https://hindu-fm-2024.firebaseio.com"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "API_URL": "https://hindu-fm-2024.firebaseio.com"
+      }
+    },
+    "production": {
+      "env": {
+        "API_URL": "https://hindu-fm-2024.firebaseio.com"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "track": "production"
+      }
+    }
+  }
+}
