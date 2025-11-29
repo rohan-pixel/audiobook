@@ -1,50 +1,168 @@
-# Welcome to your Expo app 👋
+# 📚 Audiobook App — Expo + Firebase + React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to the Audiobook App, a cross-platform mobile application built using Expo, React Native, and Firebase.
+This project provides a modern, fast, and scalable solution for listening to, uploading, and managing audiobooks on Android, iOS, and Web.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+### 🎧 Audiobook Playback
 
-   ```bash
-   npm install
-   ```
+* Stream or play downloaded audiobook files
+* Built with `expo-av` for smooth playback
+* Background audio support (configurable)
 
-2. Start the app
+### 📤 Upload & File Management
 
-   ```bash
-    npx expo start
-   ```
+* Supports audio file uploads (MP3, WAV, etc.)
+* Integrated with:
 
-In the output, you'll find options to open the app in a
+  * `expo-document-picker`
+  * `expo-file-system`
+  * `react-native-fs`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🔐 User Authentication
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* Login & Register using Firebase Authentication
+* Secure credential handling with `expo-secure-store`
 
-## Get a fresh project
+### ☁️ Cloud Sync
 
-When you're ready, run:
+* Store audiobook metadata using:
+
+  * Firebase Firestore
+  * Firebase Realtime Database
+
+### 💾 Local Storage
+
+* Offline audiobook metadata stored using:
+
+  * `expo-sqlite`
+  * `react-native-sqlite-storage`
+
+### 📱 Modern Navigation
+
+* Built using `expo-router` (file-based routing)
+* Smooth transitions & stack navigation via React Navigation
+
+### 🎨 UI & Icons
+
+* Clean UI with `@expo/vector-icons`
+* Optimized layout with `react-native-safe-area-context`
+
+
+## 🏗️ Tech Stack
+
+### Core
+
+* Expo 51
+* React Native 0.74
+* React 18
+
+### Firebase (Modular SDK)
+
+* Authentication
+* Firestore
+* Realtime Database
+* Firebase App
+
+### Device Features
+
+* Audio playback (`expo-av`)
+* File handling (`expo-file-system`)
+* Media library (`expo-media-library`)
+* Secure storage (`expo-secure-store`)
+
+### Navigation
+
+* Expo Router
+* React Navigation (Native & Stack)
+
+## 📁 Project Structure
+
+```
+app/
+│── (auth)/         # Auth screens
+│── (tabs)/         # Main app navigation
+│── components/     # Shared UI components
+│── services/       # Firebase & Local DB helpers
+│── utils/          # Helper functions
+│── assets/         # Images, fonts, audio samples
+│── scripts/        # Utility scripts (reset, etc.)
+package.json
+```
+
+## 🧩 Scripts
+
+| Command                 | Description                  |
+| ----------------------- | ---------------------------- |
+| `npm install`           | Install dependencies         |
+| `npx expo start`        | Start development server     |
+| `npm run android`       | Run on Android               |
+| `npm run ios`           | Run on iOS                   |
+| `npm run web`           | Run on Web                   |
+| `npm run reset-project` | Reset the Expo app structure |
+| `npm test`              | Run Jest tests               |
+
+
+## ▶️ Getting Started
+
+### 1️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 2️⃣ Start the development server
+
+```bash
+npx expo start
+```
+
+You can then open the app in:
+
+* 📱 Android Emulator
+* 📱 iOS Simulator
+* 🌐 Web Browser
+* 📱 Expo Go App (limited capabilities)
+
+
+## 🧰 Development Workflow
+
+### Start with file-based routing
+
+All screens live inside the `app/` folder and auto-register as routes.
+
+### Firebase Setup
+
+Add your Firebase config inside a helper such as:
+
+```
+services/firebaseConfig.js
+```
+
+### Audio Content
+
+Use `expo-av` to load, play, pause, seek, and stop audio files.
+
+## 🧽 Reset Project
+
+If you want a fresh directory structure:
 
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This moves default files to **app-example/** and creates a clean **app/** for your development.
 
-## Learn more
+## 📚 Learn More
 
-To learn more about developing your project with Expo, look at the following resources:
+* Expo Docs → [https://docs.expo.dev/](https://docs.expo.dev/)
+* Firebase Docs → [https://firebase.google.com/docs](https://firebase.google.com/docs)
+* React Navigation → [https://reactnavigation.org/docs/getting-started/](https://reactnavigation.org/docs/getting-started/)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🤝 Community
 
-## Join the community
+* Expo GitHub — [https://github.com/expo/expo](https://github.com/expo/expo)
+* Expo Discord — [https://chat.expo.dev](https://chat.expo.dev)
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
