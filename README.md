@@ -1,7 +1,7 @@
 # 📚 Audiobook App — Expo + Firebase + React Native
 
 Welcome to the Audiobook App, a cross-platform mobile application built using Expo, React Native, and Firebase.
-This project provides a modern, fast, and scalable solution for listening to, uploading, and managing audiobooks on Android, iOS, and Web.
+This project provides a modern, fast, and scalable solution for listening to, uploading, and managing audiobooks on Android, iOS, and Web
 
 ## 🚀 Features
 
